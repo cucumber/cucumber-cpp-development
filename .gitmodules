@@ -1,0 +1,9 @@
+[submodule "messages"]
+	path = messages
+	url = https://github.com/cucumber/messages.git
+[submodule "gherkin"]
+	path = gherkin
+	url = https://github.com/cucumber/gherkin.git
+[submodule "query"]
+	path = query
+	url = https://github.com/cucumber/query.git
