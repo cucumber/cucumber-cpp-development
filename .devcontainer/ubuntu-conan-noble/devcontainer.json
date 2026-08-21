@@ -1,6 +1,6 @@
 {
-	"name": "ubuntu-conan",
-	"image": "mcr.microsoft.com/devcontainers/base:resolute",
+	"name": "ubuntu-conan-noble",
+	"image": "mcr.microsoft.com/devcontainers/base:noble",
 	"features": {
 		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {}
 	},

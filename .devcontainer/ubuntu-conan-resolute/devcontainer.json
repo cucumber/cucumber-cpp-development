@@ -1,5 +1,5 @@
 {
-	"name": "ubuntu-conan",
+	"name": "ubuntu-conan-resolute",
 	"image": "mcr.microsoft.com/devcontainers/base:resolute",
 	"features": {
 		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {}
