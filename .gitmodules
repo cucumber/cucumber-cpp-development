@@ -7,3 +7,6 @@
 [submodule "query"]
 	path = query
 	url = https://github.com/cucumber/query.git
+[submodule "tag-expressions"]
+	path = tag-expressions
+	url = https://github.com/cucumber/tag-expressions.git
