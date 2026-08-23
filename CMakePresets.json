@@ -31,6 +31,7 @@
             "cacheVariables": {
                 "CUCUMBER_MESSAGES_BUILD_TESTS": "On",
                 "CUCUMBER_QUERY_BUILD_TESTS": "On",
+                "CUCUMBER_TAG_EXPRESSIONS_BUILD_TESTS": "On",
                 "CMAKE_BUILD_TYPE": "Debug"
             }
         },

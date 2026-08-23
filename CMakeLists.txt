@@ -8,23 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 enable_testing()
 
 # C++ sub-projects aggregated by this super-project.
-set(CUCUMBER_CPP_SUBPROJECTS
-    messages/cpp
-    gherkin/cpp
-    query/cpp
-)
-
-foreach(subproject IN LISTS CUCUMBER_CPP_SUBPROJECTS)
-    add_subdirectory(${subproject})
-endforeach()
-
-# Copy the aggregate compilation database into each sub-project so clangd works
-# per sub-project in the root build too; clangd ignores the sibling entries.
-set(_distribute_compile_commands "")
-foreach(subproject IN LISTS CUCUMBER_CPP_SUBPROJECTS)
-    list(APPEND _distribute_compile_commands
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-            "${CMAKE_BINARY_DIR}/compile_commands.json"
-            "${CMAKE_SOURCE_DIR}/${subproject}/compile_commands.json")
-endforeach()
-add_custom_target(distribute_compile_commands ALL ${_distribute_compile_commands} VERBATIM)
+add_subdirectory(messages/cpp)
+add_subdirectory(gherkin/cpp)
+add_subdirectory(query/cpp)
+add_subdirectory(tag-expressions/cpp)
