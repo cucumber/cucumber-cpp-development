@@ -10,3 +10,6 @@
 [submodule "tag-expressions"]
 	path = tag-expressions
 	url = https://github.com/cucumber/tag-expressions.git
+[submodule "pretty-formatter"]
+	path = pretty-formatter
+	url = https://github.com/cucumber/pretty-formatter.git
