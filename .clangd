@@ -1,6 +1,6 @@
 ---
 CompileFlags:
-  CompilationDatabase: .
+  CompilationDatabase: build/
 Diagnostics:
   UnusedIncludes: Strict
   MissingIncludes: Strict

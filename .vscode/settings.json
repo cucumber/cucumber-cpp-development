@@ -1,4 +1,4 @@
 {
     "cmake.exportCompileCommandsFile": true,
-    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+    "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
 }
