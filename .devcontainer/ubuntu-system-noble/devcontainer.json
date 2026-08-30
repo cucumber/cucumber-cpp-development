@@ -4,7 +4,7 @@
 	"features": {
 		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {}
 	},
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y nlohmann-json3-dev libgtest-dev libgmock-dev libyaml-cpp-dev",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y nlohmann-json3-dev libgtest-dev libgmock-dev libyaml-cpp-dev && ./devcontainer/ubuntu-system-noble/install_fmt.10.1.1.sh",
 	"customizations": {
 		"vscode": {
 			"settings": {
