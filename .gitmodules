@@ -13,3 +13,6 @@
 [submodule "pretty-formatter"]
 	path = pretty-formatter
 	url = https://github.com/cucumber/pretty-formatter.git
+[submodule "ci-actions"]
+	path = ci-actions
+	url = https://github.com/cucumber/ci-actions.git
