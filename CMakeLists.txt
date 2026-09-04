@@ -5,7 +5,7 @@ project(cucumber_cpp_development VERSION 1.0.0 LANGUAGES CXX)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Enable testing at the top level so `ctest` recurses into the sub-projects.
-enable_testing()
+include(CTest)
 
 # C++ sub-projects aggregated by this super-project.
 add_subdirectory(messages/cpp)
