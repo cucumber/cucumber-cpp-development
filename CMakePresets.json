@@ -33,6 +33,9 @@
                 "CUCUMBER_QUERY_BUILD_TESTS": "On",
                 "CUCUMBER_TAG_EXPRESSIONS_BUILD_TESTS": "On",
                 "CUCUMBER_PRETTY_FORMATTER_BUILD_TESTS": "On",
+                "CUCUMBER_QUERY_ENABLE_SANITIZERS": "On",
+                "CUCUMBER_TAG_EXPRESSIONS_ENABLE_SANITIZERS": "On",
+                "CUCUMBER_PRETTY_FORMATTER_ENABLE_SANITIZERS": "On",
                 "CMAKE_BUILD_TYPE": "Debug"
             }
         }
@@ -55,7 +58,8 @@
                 "outputOnFailure": true
             },
             "execution": {
-                "noTestsAction": "error"
+                "noTestsAction": "error",
+                "jobs": 16
             }
         }
     ],
