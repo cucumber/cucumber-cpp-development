@@ -2,9 +2,10 @@
 	"name": "ubuntu-system-resolute",
 	"image": "mcr.microsoft.com/devcontainers/base:resolute",
 	"features": {
-		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {}
+		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker": {}
 	},
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y nlohmann-json3-dev libgtest-dev libgmock-dev libyaml-cpp-dev libfmt-dev ruby python3-pip && python3 -m pip install gcovr==8.6 --break-system-packages",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y nlohmann-json3-dev libgtest-dev libgmock-dev libyaml-cpp-dev libfmt-dev ruby python3-pip libabsl-dev && python3 -m pip install gcovr==8.6 --break-system-packages && ./.devcontainer/install_re2.sh",
 	"customizations": {
 		"vscode": {
 			"settings": {

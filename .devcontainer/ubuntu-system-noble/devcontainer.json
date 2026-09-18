@@ -2,9 +2,10 @@
 	"name": "ubuntu-system-noble",
 	"image": "mcr.microsoft.com/devcontainers/base:noble",
 	"features": {
-		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {}
+		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker": {}
 	},
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y nlohmann-json3-dev libgtest-dev libgmock-dev libyaml-cpp-dev ruby python3-pip && python3 -m pip install gcovr==8.6 --break-system-packages && ./.devcontainer/ubuntu-system-noble/install_fmt.10.1.1.sh",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y nlohmann-json3-dev libgtest-dev libgmock-dev libyaml-cpp-dev ruby python3-pip libabsl-dev && python3 -m pip install gcovr==8.6 --break-system-packages && ./.devcontainer/ubuntu-system-noble/install_fmt.10.1.1.sh && ./.devcontainer/install_re2.sh",
 	"customizations": {
 		"vscode": {
 			"settings": {
