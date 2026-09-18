@@ -65,15 +65,11 @@
             "description": "Build with unit tests and code coverage instrumentation using system dependencies.",
             "inherits": "base",
             "cacheVariables": {
+                "CUCUMBER_CPP_DEV_ENABLE_COVERAGE": "On",
                 "CUCUMBER_MESSAGES_BUILD_TESTS": "On",
                 "CUCUMBER_QUERY_BUILD_TESTS": "On",
                 "CUCUMBER_TAG_EXPRESSIONS_BUILD_TESTS": "On",
                 "CUCUMBER_PRETTY_FORMATTER_BUILD_TESTS": "On",
-                "CUCUMBER_MESSAGES_ENABLE_COVERAGE": "On",
-                "CUCUMBER_GHERKIN_ENABLE_COVERAGE": "On",
-                "CUCUMBER_QUERY_ENABLE_COVERAGE": "On",
-                "CUCUMBER_TAG_EXPRESSIONS_ENABLE_COVERAGE": "On",
-                "CUCUMBER_PRETTY_FORMATTER_ENABLE_COVERAGE": "On",
                 "CMAKE_BUILD_TYPE": "Debug"
             }
         }
