@@ -16,3 +16,6 @@
 [submodule "ci-actions"]
 	path = ci-actions
 	url = https://github.com/cucumber/ci-actions.git
+[submodule "cucumber-expressions"]
+	path = cucumber-expressions
+	url = https://github.com/cucumber/cucumber-expressions.git
