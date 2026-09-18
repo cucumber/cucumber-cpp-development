@@ -4,13 +4,19 @@
 	"features": {
 		"ghcr.io/devcontainer-community/devcontainer-features/collection-c-cpp:1": {}
 	},
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y nlohmann-json3-dev libgtest-dev libgmock-dev libyaml-cpp-dev ruby && ./.devcontainer/ubuntu-system-noble/install_fmt.10.1.1.sh",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y nlohmann-json3-dev libgtest-dev libgmock-dev libyaml-cpp-dev ruby python3-pip && python3 -m pip install gcovr==8.6 --break-system-packages && ./.devcontainer/ubuntu-system-noble/install_fmt.10.1.1.sh",
 	"customizations": {
 		"vscode": {
 			"settings": {
 				"cmake.ignoreCMakeListsMissing": true,
 				"cmake.sourceDirectory": "${workspaceFolder}",
-				"cmake.useCMakePresets": "always"
+				"cmake.useCMakePresets": "always",
+				"cmake.exportCompileCommandsFile": true,
+				"cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
+				"cmake.postRunCoverageTarget": "generate-lcov-report",
+				"cmake.coverageInfoFiles": [
+					"${workspaceFolder}/build/coverage/lcov.info"
+				]
 			},
 			"extensions": [
 				"llvm-vs-code-extensions.vscode-clangd",
