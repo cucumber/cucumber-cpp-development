@@ -35,7 +35,7 @@ if(CUCUMBER_CPP_DEV_ENABLE_COVERAGE)
         $<$<COMPILE_LANGUAGE:CXX>:-fno-elide-constructors>
     )
 
-    if (CMAKE_C_COMPILER_ID STREQUAL "GNU")
+    if(CMAKE_C_COMPILER_ID STREQUAL "GNU")
         link_libraries(gcov)
     else()
         add_link_options(--coverage)
