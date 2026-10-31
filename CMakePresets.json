@@ -20,7 +20,7 @@
             "description": "Build and install the library using C++ dependencies already installed on the system.",
             "inherits": "base",
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Release"
+                "CMAKE_BUILD_TYPE": "RelWithDebInfo"
             }
         },
         {
@@ -30,6 +30,7 @@
             "inherits": "base",
             "cacheVariables": {
                 "CUCUMBER_MESSAGES_BUILD_TESTS": "On",
+                "CUCUMBER_GHERKIN_BUILD_TESTS": "On",
                 "CUCUMBER_QUERY_BUILD_TESTS": "On",
                 "CUCUMBER_TAG_EXPRESSIONS_BUILD_TESTS": "On",
                 "CUCUMBER_PRETTY_FORMATTER_BUILD_TESTS": "On",
@@ -50,6 +51,7 @@
             "inherits": "base",
             "cacheVariables": {
                 "CUCUMBER_MESSAGES_BUILD_TESTS": "On",
+                "CUCUMBER_GHERKIN_BUILD_TESTS": "On",
                 "CUCUMBER_QUERY_BUILD_TESTS": "On",
                 "CUCUMBER_TAG_EXPRESSIONS_BUILD_TESTS": "On",
                 "CUCUMBER_PRETTY_FORMATTER_BUILD_TESTS": "On",
@@ -71,6 +73,7 @@
             "cacheVariables": {
                 "CUCUMBER_CPP_DEV_ENABLE_COVERAGE": "On",
                 "CUCUMBER_MESSAGES_BUILD_TESTS": "On",
+                "CUCUMBER_GHERKIN_BUILD_TESTS": "On",
                 "CUCUMBER_QUERY_BUILD_TESTS": "On",
                 "CUCUMBER_TAG_EXPRESSIONS_BUILD_TESTS": "On",
                 "CUCUMBER_PRETTY_FORMATTER_BUILD_TESTS": "On",

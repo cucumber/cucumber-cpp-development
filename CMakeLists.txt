@@ -13,7 +13,7 @@ include(CTest)
 add_subdirectory(messages/cpp)
 add_subdirectory(gherkin/cpp)
 
-# messages and gherkin don't have proper unit tests, so enable coverage after including messages and gherkin
+# Enable coverage for the remaining sub-projects after messages and gherkin.
 if(CUCUMBER_CPP_DEV_ENABLE_COVERAGE)
     find_program(GCOVR_PROGRAM gcovr REQUIRED)
 
