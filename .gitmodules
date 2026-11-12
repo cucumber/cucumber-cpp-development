@@ -13,9 +13,9 @@
 [submodule "pretty-formatter"]
 	path = pretty-formatter
 	url = https://github.com/cucumber/pretty-formatter.git
-[submodule "ci-actions"]
-	path = ci-actions
-	url = https://github.com/cucumber/ci-actions.git
+[submodule "action-cpp"]
+	path = action-cpp
+	url = https://github.com/cucumber/action-cpp.git
 [submodule "cucumber-expressions"]
 	path = cucumber-expressions
 	url = https://github.com/cucumber/cucumber-expressions.git
